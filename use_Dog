@@ -1,0 +1,22 @@
+
+public class DogTest {
+
+	public static void main(String[] args) {
+		Dog grantsDog = new Dog("Gracie");
+		Dog juliasDog = new Dog(12, "pug", 9, "brown", "Lucy");
+	
+		grantsDog.sit();
+		juliasDog.sit();
+	
+		juliasDog.bark();
+		grantsDog.bark(); //  defaults to 0
+	
+		System.out.println(grantsDog);
+		System.out.println(juliasDog);
+		
+		grantsDog.toString();
+		
+		System.out.println(grantsDog.getName());
+	
+	}
+}
