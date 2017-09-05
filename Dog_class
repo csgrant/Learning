@@ -1,0 +1,55 @@
+
+public class Dog {
+	
+	
+	//instance data
+	private double height;
+	private String breed;
+	private int age;
+	private String color;
+	private String name;
+	
+	//constructor
+	public Dog (String n){
+		name = n;
+	}
+	
+	//overloaded constructor
+	public Dog (double h, String b, int a, String c, String n){
+		height = h;
+		breed = b;
+		age= a;
+		color = c;
+		name=n;
+	}
+	
+	//service method
+	public void sit(){
+		System.out.println("Good job!" + " " + name);
+	}
+	
+	public void bark(){
+		if (height < 12)
+			System.out.println("Yap! Yap!");
+		else if (height < 20)
+			System.out.println("Bark! Bark!");
+		else
+			System.out.println("Woof! Woof!");
+		
+	}
+	
+	//Accessor Method
+	public String getName(){
+		return name;
+	}
+	
+	//Mutator Method
+	public void setAge(int a){
+		age = a;
+	}
+	
+	//toString Method
+	public String toString(){
+		return name + "\t" + age;
+	}
+}
